@@ -6,14 +6,26 @@ animal_type = [ 'cat', 'dog', 'mean dog' ]
 
 pets = {}
 
-count=0
+i=0
 
 for name in names:
-    age = ages[count]
-    atype = animal_type[count]
-    print(f'{name} {age} {atype}')
-    count += 1
-    pets.update( { name:  { "age" : age, "animal_type" : atype } } )
+    age = ages[i]
+    species = animal_type[i]
+    print(f'{name} {age} {species}')
+    i += 1
+    pets.update( { name:  { 'age' : age, 'animal_type' : species } } )
 
-type(pets)
+print()
 print(pets)
+print(type(pets))
+print()
+
+#####  ALTERNATIVELY  #####
+
+pets = {}
+
+for i in range(len(names)):
+    pets.update( { names[i]:  { 'age' : ages[i], 'animal_type' : animal_type[i] } } )
+
+print(pets)
+print(type(pets))
