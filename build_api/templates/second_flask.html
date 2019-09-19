@@ -1,0 +1,13 @@
+<html>
+	<body>
+		<h1>Hello {{ username }}</h1>
+		<h2>You are {{ years }} years old</h2>
+		{% if years > 49 %}
+		<h3>You are refined</h3>
+		{% else %}
+		<h3>You are not refined . . . yet</h3>
+		<h3>You still have {{ 50 - years }} years to go to be refined</h3>
+		{% endif %}
+		<h4>You are welcome</h4>
+	</body>
+</html>

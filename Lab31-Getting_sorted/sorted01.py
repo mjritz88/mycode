@@ -19,5 +19,5 @@ print(f"New variable baksortvendors:\n\t{baksortvendors}")
 vendorsdeux = ['CISCO', 'JUNIPER', 'cisco', 'juniper', 'BIG_IP', 'big_ip', 'f5', 'arista', 'HP', 'F5', 'hp', 'ARISTA']
 
 print(f"New variable vendorsdeux:\n\t{vendorsdeux}")
-print(f"Sorted vendorsdeux:\n\t{sorted(vendorsdeux}")
+print(f"Sorted vendorsdeux:\n\t{sorted(vendorsdeux)}")
 
